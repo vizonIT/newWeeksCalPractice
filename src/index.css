@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+.App {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.stepContainer,
+.countContainer {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+button {
+  margin: 2px;
+  background-color: aquamarine;
+  color: black;
+  font-size: 12px;
+  font-weight: 700;
+  border: none;
+}
