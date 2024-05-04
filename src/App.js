@@ -12,12 +12,12 @@ function App() {
   };
 
   function handleIncreaseCount() {
-    setCount((initCount) => initCount + 1);
+    setCount((initCount) => initCount + step);
   }
   const handleReduceCount = () => {
-    setCount((initCount) => initCount - 1);
+    setCount((initCount) => initCount - step);
   };
-  const updatedCount = count + step;
+  // const updatedCount = count + step;
   const date = new Date();
   date.setDate(date.getDate() + count);
   // console.log(date);
@@ -30,7 +30,7 @@ function App() {
       </div>
       <div className="countContainer">
         <button onClick={handleReduceCount}>-</button>
-        <p>Count: {updatedCount}</p>
+        <p>Count: {count}</p>
         <button onClick={handleIncreaseCount}>+</button>
       </div>
       <div>
